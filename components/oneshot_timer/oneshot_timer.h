@@ -23,7 +23,7 @@ class OneShotTimer : public Component {
     this->interval_ = interval;
     this->remaining_time_ = interval;
   }
-  void set_auto_start(bool auto_start) { this->auto_start_ = auto_start; }
+  # void set_auto_start(bool auto_start) { this->auto_start_ = auto_start; }
 
   void start(optional<uint32_t> interval = nullopt);
   void pause();
@@ -43,7 +43,7 @@ class OneShotTimer : public Component {
   std::vector<OnTimeoutTrigger *> on_timeout_trigger_;
   std::vector<OnStartTrigger *> on_start_trigger_;
   std::vector<OnPauseTrigger *> on_pause_trigger_;
-  bool auto_start_{false};
+  # bool auto_start_{false};
 };
 
 template<typename... Ts> class StartAction : public Action<Ts...> {
