@@ -5,7 +5,7 @@ from esphome.const import (
     CONF_ID,
     CONF_INTERVAL,
     CONF_TRIGGER_ID,
-    CONF_AUTO_START,
+    # CONF_AUTO_START,
     CONF_ON_TIMEOUT,
     CONF_ON_START,
     CONF_ON_PAUSE,
