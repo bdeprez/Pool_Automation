@@ -7,9 +7,9 @@ namespace oneshot_timer {
 static const char *const TAG = "oneshot_timer";
 
 void OneShotTimer::setup() {
-  if (this->auto_start_) {
-    this->start();
-  }
+  //if (this->auto_start_) {
+  //  this->start();
+  //}
 }
 
 void OneShotTimer::loop() {
@@ -35,7 +35,7 @@ void OneShotTimer::loop() {
 void OneShotTimer::dump_config() {
   ESP_LOGCONFIG(TAG, "One-Shot Timer:");
   ESP_LOGCONFIG(TAG, "  Interval: %ums", this->interval_);
-  ESP_LOGCONFIG(TAG, "  Auto-Start: %s", this->auto_start_ ? "true" : "false");
+  // ESP_LOGCONFIG(TAG, "  Auto-Start: %s", this->auto_start_ ? "true" : "false");
 }
 
 void OneShotTimer::start(optional<uint32_t> interval) {
