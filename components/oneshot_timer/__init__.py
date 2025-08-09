@@ -29,7 +29,7 @@ ONESHOT_TIMER_SCHEMA = cv.Schema(
     {
         cv.GenerateID(): cv.declare_id(OneShotTimer),
         cv.Required(CONF_INTERVAL): cv.positive_time_period_milliseconds,
-        cv.Optional(CONF_AUTO_START, default=False): cv.boolean,
+        #cv.Optional(CONF_AUTO_START, default=False): cv.boolean,
         cv.Required(CONF_ON_TIMEOUT): automation.validate_automation(
             {
                 cv.GenerateID(CONF_TRIGGER_ID): cv.declare_id(OnTimeoutTrigger),
