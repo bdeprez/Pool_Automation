@@ -19,6 +19,10 @@ OneShotTimer = oneshot_timer_ns.class_("OneShotTimer", cg.Component)
 OnTimeoutTrigger = oneshot_timer_ns.class_("OnTimeoutTrigger")
 OnStartTrigger = oneshot_timer_ns.class_("OnStartTrigger")
 OnPauseTrigger = oneshot_timer_ns.class_("OnPauseTrigger")
+CONF_ON_START = "on_start"
+CONF_ON_STOP = "on_stop"
+CONF_AUTO_START = "auto_start"
+CONF_ON_PAUSE = "on_pause"
 
 # Actions
 StartAction = oneshot_timer_ns.class_("StartAction", automation.Action)
